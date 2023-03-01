@@ -12,28 +12,12 @@ function Navbar() {
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
 
-    // const showButton = () => {
-    //     if(window.innerWidth <= 960){
-    //         setButton(false);
-    //     }
-    //     else{
-    //         setButton(true);
-    //     }
-    // };
-
-    // useEffect(() => {
-    //     showButton();
-    // }, []);
-
-    // window.addEventListener('resize', showButton);
-
   return (
     <>
     <IconContext.Provider value={{ color: '#fff'}}>
         <div className='navbar'>
             <div className='navbar-container container'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    {/* <img src="/images/MZZZZ.png" alt="My Logo" style={{ height: '60px' }} />&nbsp; */}
                         <img src="/images/MZZZZ.png" className='nav_logo-img' />
                     MODULE-ZERO
                 </Link>

@@ -55,6 +55,7 @@ function HeroSection({
             </div>
           </div>
         </div>
+        <div className="hero-shape"></div>
       </div>
     </>
   );
