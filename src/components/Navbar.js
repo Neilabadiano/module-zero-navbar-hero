@@ -33,7 +33,8 @@ function Navbar() {
         <div className='navbar'>
             <div className='navbar-container container'>
                 <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                    <img src="/images/MZZZZ.png" alt="My Logo" style={{ height: '60px' }} />&nbsp;
+                    {/* <img src="/images/MZZZZ.png" alt="My Logo" style={{ height: '60px' }} />&nbsp; */}
+                        <img src="/images/MZZZZ.png" className='nav_logo-img' />
                     MODULE-ZERO
                 </Link>
 
