@@ -3,6 +3,18 @@ import './HeroSection.css';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 
+
+
+
+function handleMailto(){
+  const recipient = 'mailto:careers@mytdevcorp.com';
+  const subject = 'Hello';
+  const body = 'How are you doing today?';
+  const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoLink;
+}
+
+
 function HeroSection({
   lightBg,
   topLine,
@@ -40,10 +52,16 @@ function HeroSection({
                 >
                   {description}
                 </p>
-                <Link to='/apply-now'>
-                  <Button buttonSize='btn--wide' >
-                    {buttonLabel}
-                  </Button>
+                <Link to=''>
+{/* 
+                <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=recipient@example.com&su=Email%20Subject&body=Email%20Body">
+  <button>{buttonLabel}</button>
+</a> */}
+
+                <Button buttonSize='btn--wide' onClick={() => window.open("https://mail.google.com/mail/u/0/?view=cm&fs=1&to=careers@mytdevcorp.com&su=Email%20Subject&body=Email%20Body", "_blank")}>
+                  {buttonLabel}
+                </Button>
+
                 </Link>
               </div>
             </div>

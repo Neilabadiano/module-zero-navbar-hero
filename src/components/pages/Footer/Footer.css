@@ -1,0 +1,13 @@
+.footer-container{
+    background-color: #00B2CB;
+    padding: 4rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.footter-subscription{
+    display: flex;
+    
+}
